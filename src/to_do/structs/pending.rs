@@ -1,6 +1,6 @@
 use std::fmt::Display;
 
-use super::base::Base;
+use super::{base::Base, traits::{get::Get, delete::Delete, edit::Edit, create::Create}};
 
 
 #[derive(Debug)]
@@ -13,3 +13,8 @@ impl Pending {
         return Pending { super_struct: base }
     }
 }
+
+impl Create for Pending {}
+impl  Get for Pending {}
+impl Delete for Pending {}
+impl Edit for Pending {}

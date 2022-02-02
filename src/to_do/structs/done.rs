@@ -1,4 +1,4 @@
-use super::base::Base;
+use super::{base::Base, traits::{get::Get, delete::Delete, edit::Edit}};
 
 #[derive(Debug)]
 pub  struct  Done{
@@ -10,3 +10,6 @@ impl Done{
         return Done { super_struct: base }
     }
 }
+impl  Get for Done {}
+impl Delete for Done {}
+impl Edit for Done {}
