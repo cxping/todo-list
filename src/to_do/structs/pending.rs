@@ -1,5 +1,3 @@
-use std::fmt::Display;
-
 use super::{base::Base, traits::{get::Get, delete::Delete, edit::Edit, create::Create}};
 
 
